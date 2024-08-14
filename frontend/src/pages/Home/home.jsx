@@ -1,12 +1,26 @@
 import Logoimage from '../../assets/imagehome.png';
 import './home.css';
-import Listelogements from "../../../../backend/data.json"
+
+import { useEffect, useState } from 'react';
 
 
 export function Home() {
+    const [apartements, setApartements] = useState([])
+    console.log(apartements)
+    useEffect(() => {
+
+        const fetchApartements = async () => {
+            const response = await fetch("http://localhost:8080/api/properties")
+            const responseJson = await response.json()
+            setApartements(responseJson)
+
+        }
+        fetchApartements()
+    }, [])
 
     return (
-        <main>
+
+        <main className='home-container'>
 
             <div className="banner-container">
                 <div className="banner">
@@ -17,7 +31,7 @@ export function Home() {
 
             <section className='card-container'>
 
-                {Listelogements.map((logement) => (
+                {apartements.map((logement) => (
                     <div className='card' key={logement.id}>
                         <img src={logement.cover} alt="logement" />
                         <h3>{logement.title}</h3>

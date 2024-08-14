@@ -10,7 +10,7 @@ export function Header() {
             </div>
             <nav className='header-links'>
 
-                <div>Acceuil</div>
+                <div>Accueil</div>
 
                 <div>A propos</div>
 
