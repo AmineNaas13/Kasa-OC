@@ -1,5 +1,7 @@
+
 import Logo from '../../assets/Logo.png';
 import './header.css';
+import { NavLink } from 'react-router-dom';
 
 export function Header() {
 
@@ -10,12 +12,11 @@ export function Header() {
             </div>
             <nav className='header-links'>
 
-                <div>Accueil</div>
 
-                <div>A propos</div>
+                <div>Accueil</div>
+                <a href="/about">A Propos</a>
 
             </nav>
-
 
         </header>
 

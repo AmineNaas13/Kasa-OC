@@ -1,0 +1,33 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 139px;
+    margin-top: 139px;
+
+}
+
+
+.error img {
+
+    width: 597px;
+    height: 263px;
+    margin-bottom: 139px;
+
+}
+
+.errorText {
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 139px;
+}
+
+.errorLinkHome {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+}

@@ -1,6 +1,5 @@
 import Logoimage from '../../assets/imagehome.png';
 import './home.css';
-
 import { useEffect, useState } from 'react';
 
 
