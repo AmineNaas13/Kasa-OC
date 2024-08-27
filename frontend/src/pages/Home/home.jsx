@@ -2,10 +2,16 @@ import Logoimage from '../../assets/imagehome.png';
 import './home.css';
 import { useEffect, useState } from 'react';
 
+import { useNavigate } from 'react-router-dom';
+
 
 export function Home() {
+
     const [apartements, setApartements] = useState([])
     console.log(apartements)
+
+
+
     useEffect(() => {
 
         const fetchApartements = async () => {
@@ -15,11 +21,15 @@ export function Home() {
 
         }
         fetchApartements()
-    }, [])
+    }, []);
+
+
+
 
     return (
 
-        <main className='home-container'>
+
+        <main className="home-container">
 
             <div className="banner-container">
                 <div className="banner">
@@ -31,11 +41,12 @@ export function Home() {
             <section className='card-container'>
 
                 {apartements.map((logement) => (
-                    <div className='card' key={logement.id}>
+                    <a href={`/apartment/${logement.id}`} className='card' key={logement.id}
+                    >
                         <img src={logement.cover} alt="logement" />
                         <h3>{logement.title}</h3>
 
-                    </div>
+                    </a>
 
                 ))}
 

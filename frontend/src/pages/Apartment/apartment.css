@@ -1,0 +1,104 @@
+.apartment-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+    margin: auto;
+
+}
+
+.apartment-image img {
+    width: 100%;
+    height: 415px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+
+.title {
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.apartment-title h2 {
+    color: #000;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 500;
+
+}
+
+.apartment-title .apartment-tags {
+
+    background-color: #FF6060;
+    color: #FFF;
+
+
+}
+
+.apartment-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+.apartment-owner {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.apartment-name-picture {
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+    margin-bottom: 21px;
+
+}
+
+.apartment-name-picture img {
+    border-radius: 100px;
+    width: 64px;
+    height: 64px;
+    margin-left: 10px;
+
+}
+
+.apartment-name-picture p {
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: right;
+    width: 93px;
+    height: 52px;
+}
+
+.rating {
+    display: flex;
+    justify-content: end;
+    color: #FF6060;
+    font-size: 22px;
+
+
+}
+
+.fa-star {
+    margin-left: 5px;
+}
+
+
+
+.apartment-description {
+
+    display: flex;
+    flex-direction: row;
+    gap: 76px;
+
+}

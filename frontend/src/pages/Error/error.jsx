@@ -1,10 +1,14 @@
 import imageError from '../../assets/error404.png';
 import { NavLink } from "react-router-dom";
 
+
 import './error.css';
 
-export function Errorpage() {
+export function Error() {
+
+
     return (
+
         <div className='error'>
             <figure className='error-container'>
                 <img src={imageError} alt="error404" />
@@ -20,4 +24,4 @@ export function Errorpage() {
     )
 }
 
-export default Errorpage
+export default Error

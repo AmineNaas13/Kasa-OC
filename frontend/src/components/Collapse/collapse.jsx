@@ -18,13 +18,15 @@ export function Collapse(props) {
             <div className="collapse-header"    >
                 <h2>{title}</h2>
 
-                <span className="chevron" onClick={showContent} ><i className={`fa-solid icon ${isOpen ? "fa-chevron-up" : "fa-chevron-down"}`}></i></span>
+                <span onClick={showContent} ><i className={`fa-solid icon ${isOpen ? "fa-chevron-up" : "fa-chevron-down"}`}></i></span>
 
 
             </div>
             {isOpen && (
                 <div className="collapse-content">
-                    {content}
+                    {Array.isArray(content) ? (<ul> {content.map((value) => {
+                        return (<li>{value}</li>)
+                    })}</ul>) : <p>{content}</p>}
                 </div>
             )}
         </div>
