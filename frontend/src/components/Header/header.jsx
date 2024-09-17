@@ -12,14 +12,11 @@ export function Header() {
             </div>
             <nav className='header-links'>
 
-
-                <div>Accueil</div>
+                <a href="/">Accueil</a>
                 <a href="/about">A Propos</a>
-
             </nav>
 
         </header>
-
     )
 
 }

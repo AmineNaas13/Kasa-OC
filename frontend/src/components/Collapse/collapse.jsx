@@ -15,7 +15,7 @@ export function Collapse(props) {
 
     return (
         <div className="collapse">
-            <div className="collapse-header"    >
+            <div className="collapse-header" >
                 <h2>{title}</h2>
 
                 <span onClick={showContent} ><i className={`fa-solid icon ${isOpen ? "fa-chevron-up" : "fa-chevron-down"}`}></i></span>
@@ -25,7 +25,7 @@ export function Collapse(props) {
             {isOpen && (
                 <div className="collapse-content">
                     {Array.isArray(content) ? (<ul> {content.map((value) => {
-                        return (<li>{value}</li>)
+                        return (<div>{value}</div>)
                     })}</ul>) : <p>{content}</p>}
                 </div>
             )}

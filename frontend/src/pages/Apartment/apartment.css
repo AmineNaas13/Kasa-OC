@@ -29,14 +29,19 @@
     font-size: 18px;
     font-family: Montserrat;
     font-weight: 500;
+    margin-bottom: 20px;
 
 }
 
-.apartment-title .apartment-tags {
+.apartment-tags {
 
     background-color: #FF6060;
     color: #FFF;
-
+    margin-right: 10px;
+    padding: 3px 20px 2px 20px;
+    font-family: Montserrat;
+    border-radius: 25px;
+    font-weight: 500;
 
 }
 
@@ -46,7 +51,6 @@
     justify-content: space-between;
 
 }
-
 
 .apartment-owner {
     display: flex;
@@ -58,8 +62,6 @@
     display: flex;
     flex-direction: row;
     margin-top: 24px;
-    margin-bottom: 21px;
-
 }
 
 .apartment-name-picture img {
@@ -67,7 +69,6 @@
     width: 64px;
     height: 64px;
     margin-left: 10px;
-
 }
 
 .apartment-name-picture p {
@@ -85,18 +86,13 @@
     justify-content: end;
     color: #FF6060;
     font-size: 22px;
-
-
 }
 
 .fa-star {
     margin-left: 5px;
 }
 
-
-
 .apartment-description {
-
     display: flex;
     flex-direction: row;
     gap: 76px;

@@ -2,8 +2,6 @@ import Logoimage from '../../assets/imagehome.png';
 import './home.css';
 import { useEffect, useState } from 'react';
 
-import { useNavigate } from 'react-router-dom';
-
 
 export function Home() {
 
@@ -34,7 +32,7 @@ export function Home() {
             <div className="banner-container">
                 <div className="banner">
                     <img src={Logoimage} alt="image paysage" />
-                    <h1> Chez vous,partout et ailleurs</h1>
+                    <h1> Chez vous, partout et ailleurs</h1>
                 </div>
             </div>
 

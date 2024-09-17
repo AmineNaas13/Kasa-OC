@@ -25,7 +25,8 @@
 }
 
 .collapse-content {
-    padding: 20px;
+    /* padding: 20px; */
+    padding-left: 10px;
     background-color: #fff;
     font-family: Montserrat;
     font-weight: 400;
@@ -45,4 +46,19 @@
 
 .icon.fa-chevron-down {
     transform: rotate(180deg);
+}
+
+
+/* Small devices (phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+    .collapse {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .collapse h2 {
+        font-size: 14px;
+    }
 }

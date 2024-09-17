@@ -31,3 +31,23 @@
     font-size: 18px;
     font-weight: 500;
 }
+
+/* Small devices (phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+    .error img {
+        width: 198px;
+        height: 99px;
+        margin-bottom: 113px;
+    }
+
+    .errorText {
+        font-size: 16px;
+        margin-bottom: 113px;
+    }
+
+    .errorLinkHome {
+        font-size: 16px;
+        margin-bottom: 113px;
+    }
+}

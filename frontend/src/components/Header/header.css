@@ -6,7 +6,6 @@
     margin: auto;
     margin-bottom: 38px;
 
-
 }
 
 .header-logo img {
@@ -23,4 +22,51 @@
     font-style: normal;
     font-weight: 500;
     gap: 57px;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: #000;
+    transition: text-decoration 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    .header {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+}
+
+
+/* Small devices (phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+
+    .header {
+        margin: 20px 20px 27px 20px;
+    }
+
+    .header-logo img {
+        width: 145px;
+        height: 47px;
+    }
+
+    .header-links {
+        gap: 27px;
+    }
+
+    .header-links a {
+        font-size: 16px;
+    }
 }

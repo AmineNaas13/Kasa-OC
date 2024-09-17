@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import './apartment.css';
 import Collapse from "../../components/Collapse/collapse";
+import Carousel from '../../components/Carrousel/carousel';
 
 export function Apartment() {
 
@@ -27,7 +28,8 @@ export function Apartment() {
 
         <div className='apartment-container'>
             <div className='apartment-image'>
-                <img src={apartment.cover} alt="logement" />
+                {/* <img src={apartment.cover} alt="logement" /> */}
+                <Carousel images={apartment.pictures} />
             </div>
             <div className='apartment-header'>
 
@@ -68,7 +70,6 @@ export function Apartment() {
 
             </div>
 
-
         </div>
 
     )
@@ -82,4 +83,3 @@ export default Apartment
 
 
 
-// content={<div className='equipment-content'>{apartment.equipments}</div>}
