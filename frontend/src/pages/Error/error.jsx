@@ -1,7 +1,5 @@
 import imageError from '../../assets/error404.png';
 import { NavLink } from "react-router-dom";
-
-
 import './error.css';
 
 export function Error() {

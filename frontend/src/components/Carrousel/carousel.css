@@ -12,7 +12,6 @@
     padding: 10px;
     cursor: pointer;
     z-index: 1;
-    /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 .fa-chevron-right {
@@ -32,4 +31,20 @@
     bottom: 0;
     right: 50%;
 
+}
+
+/* Small devices (phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+    .fa-chevron-left {
+        font-size: 24px;
+    }
+
+    .fa-chevron-right {
+        font-size: 24px;
+    }
+
+    .carousel-counter {
+        display: none;
+    }
 }
