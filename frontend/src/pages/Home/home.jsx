@@ -8,8 +8,6 @@ export function Home() {
     const [apartements, setApartements] = useState([])
     console.log(apartements)
 
-
-
     useEffect(() => {
 
         const fetchApartements = async () => {
@@ -21,11 +19,7 @@ export function Home() {
         fetchApartements()
     }, []);
 
-
-
-
     return (
-
 
         <main className="home-container">
 
@@ -45,11 +39,9 @@ export function Home() {
                         <h3>{logement.title}</h3>
 
                     </a>
-
                 ))}
 
             </section>
-
         </main>
     )
 

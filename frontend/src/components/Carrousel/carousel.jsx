@@ -12,13 +12,6 @@ export function Carousel({ images }) {
 
         );
 
-        // setCurrentIndex((index) => {
-        //     if (index === images.length - 1) {
-        //         return 0;  // Si c'est la dernière image, revenir à la première
-        //     } else {
-        //         return index + 1;  // Sinon, passer à l'image suivante
-        //     }
-        // });
     };
 
     const prevImage = () => {
@@ -26,13 +19,6 @@ export function Carousel({ images }) {
             index === 0 ? images.length - 1 : index - 1
         );
 
-        // setCurrentIndex((index) => {
-        //     if (index === 0) {
-        //         return images.length - 1;  // Si c'est la premeiere image, revenir à la derniere
-        //     } else {
-        //         return index - 1;  // Sinon, revenir à l'image precedente
-        //     }
-        // });
     };
 
     return (

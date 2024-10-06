@@ -1,7 +1,7 @@
 
 import Logo from '../../assets/Logo.png';
 import './header.css';
-import { NavLink } from 'react-router-dom';
+
 
 export function Header() {
 
@@ -11,13 +11,10 @@ export function Header() {
                 <img src={Logo} alt="logo kasa" />
             </div>
             <nav className='header-links'>
-
                 <a href="/">Accueil</a>
                 <a href="/about">A Propos</a>
             </nav>
-
         </header>
     )
-
 }
 export default Header;

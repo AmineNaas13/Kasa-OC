@@ -25,9 +25,6 @@ footer {
 }
 
 /****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {}
-
 
 /* Small devices (phones, less than 768px) */
 
@@ -38,13 +35,9 @@ footer {
         margin-top: 27px;
     }
 
-
     .footer-p {
         font-size: 11px;
         width: 120px;
         margin-top: 0;
-
-
-
     }
 }
