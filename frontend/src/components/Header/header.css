@@ -22,21 +22,20 @@
     font-style: normal;
     font-weight: 500;
     gap: 57px;
+
 }
 
 .header-links a {
     text-decoration: none;
     color: #000;
     transition: text-decoration 0.3s ease;
+
 }
 
-a:hover {
+.header-links a.underline {
     text-decoration: underline;
 }
 
-a:active {
-    text-decoration: underline;
-}
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
@@ -63,10 +62,11 @@ a:active {
     }
 
     .header-links {
-        gap: 27px;
+        gap: 15px;
     }
 
     .header-links a {
-        font-size: 16px;
+        font-size: 14px;
+        text-transform: uppercase;
     }
 }

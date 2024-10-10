@@ -107,6 +107,10 @@
         margin-bottom: 15px;
     }
 
+    .apartment-name-picture img {
+        margin-left: 0;
+    }
+
     .apartment-header {
         display: flex;
         flex-direction: column;
@@ -123,9 +127,11 @@
         margin-bottom: 10px;
     }
 
+
     .apartment-tags {
-        font-size: 10px;
-        margin-right: 5px;
+        font-size: 9px;
+        margin-right: 2px;
+        margin-top: 12px;
         padding: 5px;
     }
 
@@ -133,6 +139,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        max-width: 100%;
     }
 
     .apartment-name-picture {
@@ -142,7 +149,7 @@
     .apartment-name-picture img {
         width: 32px;
         height: 32px;
-
+        margin-left: 2px;
     }
 
     .apartment-name-picture p {
@@ -158,6 +165,10 @@
         margin-top: 24px;
         margin-right: 140px;
         font-size: 18px;
+    }
+
+    .fa-star {
+        margin-left: 0;
     }
 
     .apartment-description {

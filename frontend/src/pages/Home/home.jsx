@@ -1,6 +1,7 @@
 import Logoimage from '../../assets/imagehome.png';
 import './home.css';
 import { useEffect, useState } from 'react';
+import Header from '../../components/Header/header';
 
 
 export function Home() {
@@ -20,6 +21,7 @@ export function Home() {
     }, []);
 
     return (
+
 
         <main className="home-container">
 

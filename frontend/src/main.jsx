@@ -6,36 +6,38 @@ import { Home } from './pages/Home/home.jsx';
 import { About } from './pages/About/about.jsx';
 import { Error } from './pages/Error/error.jsx';
 import { Apartment } from './pages/Apartment/apartment.jsx';
-import { Header } from './components/Header/header.jsx';
-import { Footer } from './components/Footer/footer.jsx';
+import { Layout } from './components/Layout/layout.jsx';
+
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Layout />,
     errorElement: <Error />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/apartment/:id",
+        element: <Apartment />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/*",
+        element: <Error />,
+      },
+    ],
   },
-
-  {
-    path: "/apartment/:id",
-    element: <Apartment />,
-  },
-
-  {
-    path: "/about",
-    element: <About />,
-  },
-
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Header />
-
     <RouterProvider router={router} />
-
-    <Footer />
-
   </React.StrictMode>,
 )
